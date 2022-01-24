@@ -1,6 +1,6 @@
-Sistema de versionamento de código distribuído  → SISTEMA DISTRIBUÍDO SEGURO.
+### Sistema de versionamento de código distribuído  → SISTEMA DISTRIBUÍDO SEGURO.
 
-O Git Bash é um terminal extendido para otimizar o uso do Git.
+O <strong> Git Bash </strong>é um terminal extendido para otimizar o uso do Git.
 
 GUI x CLI
 
@@ -26,8 +26,6 @@ echo —> printa o que vc digitar
 
 /Q = quiet mode
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7525e9bb-d576-466f-ae5a-494fbed3147c/Untitled.png)
-
 SHA1:  algoritmo de encriptação. Significa *Secure Hash Algorithm,* e é um conjunto de funções hash criptográficas projetadas pela NSA. Gera um conjunto de caracteres identificadores de 40 dígitos.
 
 Git bash: trocar o tema na barra superior, botão D, options.
@@ -45,8 +43,6 @@ echo 'conteudo' | git hash-object —stdin
 echo -e 'blob 9\0conteudo' | openssl sha1
 
 **Trees:** armazenam blobs —> guarda o sha1 e o nome dos arquivos. É um comportamento de diretório com arquivos dentro.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/020742cd-4436-4205-9481-b5e16a52decc/Untitled.png)
 
 **Commit:** é o objeto que junta tudo. Aponta para árvore, para o parente (o último realizado antes dele), para o autor e para uma mensagem. Explica e dá significado para as pastas, seus arquivos e alterações. Tem timestamp. Também tem sha1 em seus metadados.
 
@@ -100,34 +96,29 @@ git clone *cola o endereço*
     - git add *
     - git commit -m “commit inicial”
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/02bcda1a-14f3-42a5-bb7a-089fee0bcd10/Untitled.png)
-    
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b376f0b0-9ded-40bb-998c-0cda84f19eae/Untitled.png)
-
 - git status
 - mv *nomedoarquivo.ext* ./*nomedaPastaDestino/*
 - git add *nomedoartquivo.ext pasta/*
 - **echo > README.md**
 
-PARA APONTAR A PASTA LOCAL PARA O GITHUB:
+### PARA APONTAR A PASTA LOCAL PARA O GITHUB:
 
 - **git remote add origin https://github.com..... (endereço da pasta no github) (ex** [https://github.com/wholopes/studies.git](https://github.com/wholopes/studies.git))
 - git remote -v (lista onde está a origem no github)
 - git status
 
-DEPOIS, PARA ENVIAR OS ARQUIVOS
+### DEPOIS, PARA ENVIAR OS ARQUIVOS
 
 - git push origin master
 
-QUANDO MODIFICAR ALGUM ARQUIVO:
+### QUANDO MODIFICAR ALGUM ARQUIVO:
 
 - git status
 - git add *
 - git commit -m “Descreva a modificacao que foi realizada neste commit”
 - git push origin master
 
-SE HOUVER CONFLITO DE VERSÕES, PORQUE NO GITHUB JÁ ESTÁ UMA VERSÃO MAIS ATUAL QUE NA SUA MÁQUINA:
+### SE HOUVER CONFLITO DE VERSÕES, PORQUE NO GITHUB JÁ ESTÁ UMA VERSÃO MAIS ATUAL QUE NA SUA MÁQUINA:
 
 - git pull origin master (vai trazer os arquivos que estão no Github, para que sejam comparados manualmente e consertados em sua última versão, antes de enviar as modificações que eu fiz)
     - <<<<<<< HEAD (indica as modificações que eu fiz)
